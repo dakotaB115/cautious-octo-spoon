@@ -12,9 +12,11 @@
 		2D64AE88219DD62C00B7491D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D64AE86219DD62C00B7491D /* Main.storyboard */; };
 		2D64AE8A219DD62D00B7491D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D64AE89219DD62D00B7491D /* Assets.xcassets */; };
 		2D64AE8D219DD62D00B7491D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D64AE8B219DD62D00B7491D /* LaunchScreen.storyboard */; };
+		4B970446B3426614986784FD /* Pods_Firestore_testing_mkII.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF3983BE37EE9E00C1B0D98 /* Pods_Firestore_testing_mkII.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05F6943D0EDE1DDF9749F254 /* Pods-Firestore testing mkII.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firestore testing mkII.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firestore testing mkII/Pods-Firestore testing mkII.debug.xcconfig"; sourceTree = "<group>"; };
 		2D64AE7F219DD62C00B7491D /* Firestore testing mkII.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firestore testing mkII.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D64AE82219DD62C00B7491D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D64AE84219DD62C00B7491D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		2D64AE89219DD62D00B7491D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D64AE8C219DD62D00B7491D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D64AE8E219DD62D00B7491D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		996F9C3C4C3DF2A990D3A551 /* Pods-Firestore testing mkII.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firestore testing mkII.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firestore testing mkII/Pods-Firestore testing mkII.release.xcconfig"; sourceTree = "<group>"; };
+		EEF3983BE37EE9E00C1B0D98 /* Pods_Firestore_testing_mkII.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firestore_testing_mkII.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B970446B3426614986784FD /* Pods_Firestore_testing_mkII.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12E54E872223A5CDF9E48050 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05F6943D0EDE1DDF9749F254 /* Pods-Firestore testing mkII.debug.xcconfig */,
+				996F9C3C4C3DF2A990D3A551 /* Pods-Firestore testing mkII.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A9E0D07D0AF3316D59CE0AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEF3983BE37EE9E00C1B0D98 /* Pods_Firestore_testing_mkII.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2D64AE76219DD62C00B7491D = {
 			isa = PBXGroup;
 			children = (
 				2D64AE81219DD62C00B7491D /* Firestore testing mkII */,
 				2D64AE80219DD62C00B7491D /* Products */,
+				12E54E872223A5CDF9E48050 /* Pods */,
+				2A9E0D07D0AF3316D59CE0AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D64AE91219DD62D00B7491D /* Build configuration list for PBXNativeTarget "Firestore testing mkII" */;
 			buildPhases = (
+				57A965ACD4B18884343E2048 /* [CP] Check Pods Manifest.lock */,
 				2D64AE7B219DD62C00B7491D /* Sources */,
 				2D64AE7C219DD62C00B7491D /* Frameworks */,
 				2D64AE7D219DD62C00B7491D /* Resources */,
+				6D05C62D739B8E2631485558 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57A965ACD4B18884343E2048 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Firestore testing mkII-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D05C62D739B8E2631485558 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Firestore testing mkII/Pods-Firestore testing mkII-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firestore testing mkII/Pods-Firestore testing mkII-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D64AE7B219DD62C00B7491D /* Sources */ = {
@@ -280,6 +365,7 @@
 		};
 		2D64AE92219DD62D00B7491D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F6943D0EDE1DDF9749F254 /* Pods-Firestore testing mkII.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +383,7 @@
 		};
 		2D64AE93219DD62D00B7491D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 996F9C3C4C3DF2A990D3A551 /* Pods-Firestore testing mkII.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
